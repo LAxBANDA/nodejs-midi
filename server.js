@@ -39,6 +39,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html')); // Asegúrate de que 'index.html' esté en el mismo directorio que este archivo
 });
 
+
+app.get('/resultado', (req, res) => {
+  res.sendFile(path.join(__dirname, 'resultado.html')); // Asegúrate de que 'index.html' esté en el mismo directorio que este archivo
+});
+
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
