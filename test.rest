@@ -1,0 +1,11 @@
+### Subir archivo MIDI con POST y nombre de campo midiFile
+POST http://localhost:8081/upload-midi
+Content-Type: multipart/form-data; boundary=------------------------abcdef123456
+
+--------------------------abcdef123456
+Content-Disposition: form-data; name="midiFile"; filename="ALEKOS MIDI.mid"
+Content-Type: application/octet-stream
+
+< ./ALEKOS MIDI.mid
+
+--------------------------abcdef123456--
